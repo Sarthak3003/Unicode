@@ -1,0 +1,11 @@
+<h1>Pokemons</h1>
+<form>
+    <p>Name of Pokemon: <input type="text" name="Pokemon"></p>
+    <p><input type="submit" value="Submit"></p>
+</form>
+
+{% for i in url.results%}
+    <li>
+        {{i.name}}
+    </li>
+{% endfor %}
